@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Inicio - Sistema IMC</title>
+</head>
+<body>
+    <main id="app-container">
+        <section id="calculator" class="app-panel">
+            <nav class="top-nav">
+                <a class="nav-link active" href="inicio.html">
+                    <i class="fa-solid fa-house"></i>
+                    Inicio
+                </a>
+                <a class="nav-link" href="calculadora.html">
+                    <i class="fa-solid fa-calculator"></i>
+                    Calculadora
+                </a>
+                <button id="logout" class="icon-button" title="Sair" type="button">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </button>
+            </nav>
+
+            <section class="student-card">
+                <h1 id="title">Inicio</h1>
+                <div class="student-info">
+                    <p>Nome: <strong id="student-name"></strong></p>
+                    <p>RA: <strong id="student-ra"></strong></p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Historico de IMC</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data e hora</th>
+                                <th>Peso</th>
+                                <th>Altura</th>
+                                <th>IMC</th>
+                                <th>Classificacao</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history-list"></tbody>
+                    </table>
+                    <p id="empty-history" class="empty-state hidden">Nenhum calculo registrado.</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="js/inicio.js"></script>
+</body>
+</html>

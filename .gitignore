@@ -1,0 +1,22 @@
+# Arquivos locais do sistema/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Segredos e configuracoes locais
+.env
+.env.*
+*.pem
+*.key
+
+# Dependencias e builds, caso o projeto cresca
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
